@@ -10,7 +10,7 @@
 
 <body>
     <h2>De 5 snelste achtbanen van Europe</h2>
-    <form action="" method="post">
+    <form action="create.php" method="post">
 
         <label for="naamachtbaan">Naam Achtbaan:</label><br>
         <input type="text" name="naamachtbaan" id="naamachtbaan"><br>
