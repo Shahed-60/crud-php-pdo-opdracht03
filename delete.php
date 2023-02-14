@@ -14,7 +14,7 @@ try {
 } catch (PDOException $e) {
     echo "Connection failed:" . $e->getMessage();
 }
-
+// :)
 // Maak een delete query voor het verwijderen van een record
 $sql = "DELETE FROM achtbaan
         WHERE Id = :Id";
