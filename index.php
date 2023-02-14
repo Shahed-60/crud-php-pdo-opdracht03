@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>De 5 snelste achtbanen van Europe</title>
 </head>
+<!-- :) -->
 
 <body>
     <h2>De 5 snelste achtbanen van Europe</h2>

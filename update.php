@@ -42,7 +42,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         $statement->bindValue(':cijfer', $_POST['cijfer'], PDO::PARAM_STR);
 
         $statement->execute();
-
+        // :)
         echo "Het updaten is gelukt";
         header('Refresh:3; url=read.php');
     } catch (PDOException $e) {
