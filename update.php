@@ -16,7 +16,7 @@ try {
 }
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
     // var_dump($_POST['Id']);
-    // var_dump($_POST);
+    // var_dump($_POST); djh
     // Maak een sql update-query en vuur deze af op de database
 
     try {
