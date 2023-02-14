@@ -1,19 +1,18 @@
 <?php
-// voeg de verbindingsgegevens toe
-require('config.php');
-
-// Maak een data sourcename string voor de pdo constructor
-$dsn = "mysql:host=$dbHost;dbname=$dbName;charset=UTF8";
+$servername = "localhost";
+$username = "root";
+$password = "";
 
 try {
-    $pdo = new PDO($dsn, $dbUser, $dbPass);
-    if ($pdo) {
-        echo "Verbinding is gelukt";
-    } else {
-        echo "Interne server-error";
-    }
+    $pdo = new PDO("mysql:host=$servername;dbname=atractiepark", $username, $password);
+    // set the PDO error mode to exception
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    // echo "Connected successfully";
+    $sql = 'SELECT * from achtbaan';
+    $q = $pdo->query($sql);
+    $q->setFetchMode(PDO::FETCH_ASSOC);
 } catch (PDOException $e) {
-    $e->getMessage();
+    echo "Connection failed:" . $e->getMessage();
 }
 
 // Maak een delete query voor het verwijderen van een record
